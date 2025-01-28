@@ -9,13 +9,13 @@ const greet = (name) => `Hello, ${name}!`;
 console.log(greet('World'));
 
 function counter(){
-    let count = 5;
-    return function (){
+    let count = 4;
+    return function(){
         count++;
         return count;
     };
 }
 
-const count = counter();
-console.log(counter());
-console.log(counter());
+const myCounter = counter();
+console.log(myCounter());
+console.log(myCounter());
