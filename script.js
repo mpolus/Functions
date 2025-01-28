@@ -4,12 +4,18 @@ function square(num){
 
 console.log(square(3));
 
-const greet = (name) => `Hello, ${name}`;
+const greet = (name) => `Hello, ${name}!`;
 
-function createCounter(){
+console.log(greet('World'));
+
+function counter(){
     let count = 5;
     return function (){
         count++;
         return count;
-    }
+    };
 }
+
+const count = counter();
+console.log(counter());
+console.log(counter());
